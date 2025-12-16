@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="sitemap"
+   type="application/xml"
+   title="Sitemap"
+   href="/sitemap.xml"
+  />
+
+  <!-- Primary SEO -->
+  <title>
+   Muhammad Bilal | Full Stack Software Engineer Portfolio – Symfony, Laravel,
+   React, Vue, Next.js
+  </title>
+
+  <meta
+  name="description"
+  content="Muhammad Bilal – Full Stack Software Engineer. Expert in Symfony, Laravel, React.js, Vue.js, Next.js, React Native, REST APIs, and high-traffic platforms like Cioa Key Influence and BusinessHub. Explore my portfolio, resume, and certifications."
+  />
+  <meta
+   name="keywords"
+   content="Full Stack Developer, Symfony Developer, Laravel Developer, React.js, Vue.js, Next.js, React Native, REST API, Web Development, Mobile Apps, SEO, Software Engineer Portfolio, Web Design, Cloud Deployment"
+  />
+  <meta name="author" content="Muhammad Bilal" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta
+   property="og:title"
+   content="Muhammad Bilal | Full Stack Software Engineer Portfolio"
+  />
+  <meta
+   property="og:description"
+   content="Explore Muhammad Bilal's portfolio as a Full Stack Software Engineer. Expert in Symfony, Laravel, React.js, Vue.js, Next.js, React Native, REST APIs, and high-traffic platforms like Cioa Key Influence and BusinessHub."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mubilal.com/" />
+  <meta property="og:locale" content="en_QA" />
+  <meta property="og:site_name" content="Muhammad Bilal Portfolio" />
+  <meta
+   property="og:image"
+   content="https://www.mubilal.com/assets/images/Profile-W.png"
+  />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+   name="twitter:title"
+   content="Muhammad Bilal | Full Stack Software Engineer Portfolio"
+  />
+  <meta
+   name="twitter:description"
+   content="Portfolio of Muhammad Bilal, Full Stack Software Engineer. Expert in Symfony, Laravel, React.js, Vue.js, Next.js, React Native, REST APIs."
+  />
+  <meta
+   name="twitter:image"
+   content="https://www.mubilal.com/assets/images/Profile-W.png"
+  />
+
+  <!-- Favicon -->
+  <link
+   rel="shortcut icon"
+   href="./assets/images/Profile-W.png"
+   type="image/x-icon"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+   rel="stylesheet"
+  />
+
+  <!-- Google Analytics -->
+  <script
+   async
+   src="https://www.googletagmanager.com/gtag/js?id=G-PKC08M31Q4"
+  ></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() {
+    dataLayer.push(arguments);
+   }
+   gtag("js", new Date());
+   gtag("config", "G-PKC08M31Q4");
+  </script>
+
+ <script>
+  // TODO To translate: Detect browser language
+  (function () {
+    const storedLang = localStorage.getItem("site_language");
+
+    const browserLang =
+      navigator.languages && navigator.languages.length
+        ? navigator.languages[0]
+        : navigator.language || navigator.userLanguage;
+
+    const lang = (storedLang || browserLang || "en").split("-")[0];
+
+    localStorage.setItem("site_language", lang);
+    document.documentElement.lang = lang;
+    window.APP_LANG = lang;
+
+    console.log("Detected language:", lang);
+  })();
+
+  // TODO To translate: Initialize Google Translate
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  }
+
+  // TODO To translate: Auto trigger Google Translate
+  function autoTranslate() {
+    const lang = window.APP_LANG || "en";
+
+    if (lang === "en") return;
+
+    const interval = setInterval(() => {
+      const select = document.querySelector("select.goog-te-combo");
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+        clearInterval(interval);
+      }
+    }, 500);
+  }
+</script>
+ <script
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  onload="autoTranslate()"
+></script>
+ </head>
+
+ <body>
+  <main>
+   <aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+     <figure class="avatar-box">
+      <img src="./assets/images/Profile-W.png" alt="Muhammad Bilal" width="80" />
+     </figure>
+
+     <div class="info-content">
+      <h1 class="name" title="Muhammad Bilal">Muhammad Bilal</h1>
+
+      <p class="title">Software Engineer</p>
+     </div>
+
+     <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+
+      <ion-icon name="chevron-down"></ion-icon>
+     </button>
+    </div>
+
+    <div class="sidebar-info_more">
+     <div class="separator"></div>
+
+     <ul class="contacts-list">
+      <li class="contact-item">
+       <div class="icon-box">
+        <ion-icon name="mail-outline"></ion-icon>
+       </div>
+
+       <div class="contact-info">
+        <p class="contact-title">Email</p>
+
+        <a href="mailto:bilalahmada774@gmail.com" class="contact-link"
+         >bilalahmada774@gmail.com</a
+        >
+       </div>
+      </li>
+
+      <li class="contact-item">
+       <div class="icon-box">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+       </div>
+
+       <div class="contact-info">
+        <p class="contact-title">Phone</p>
+
+        <a href="tel:+97450684583" class="contact-link">+393513219813</a>
+       </div>
+      </li>
+
+      <li class="contact-item">
+       <div class="icon-box">
+        <ion-icon name="calendar-outline"></ion-icon>
+       </div>
+
+       <div class="contact-info">
+        <p class="contact-title">Birthday</p>
+
+        <time datetime="1994-04-11">January 18, 1997</time>
+       </div>
+      </li>
+
+      <li class="contact-item">
+       <div class="icon-box">
+        <ion-icon name="location-outline"></ion-icon>
+       </div>
+
+       <div class="contact-info">
+        <p class="contact-title">Location</p>
+
+        <address>Messina, Italys</address>
+       </div>
+      </li>
+     </ul>
+
+     <div class="separator"></div>
+
+     <ul class="social-list">
+      <li class="social-item">
+       <a
+        target="_blank"
+        href="https://twitter.com/bilalmuhammada"
+        class="social-link"
+       >
+        <ion-icon name="logo-twitter"></ion-icon>
+       </a>
+      </li>
+
+      <li class="social-item">
+       <a
+        target="_blank"
+        href="https://www.linkedin.com/in/bilalmuhammad8/"
+        class="social-link"
+       >
+        <ion-icon name="logo-linkedin"></ion-icon>
+       </a>
+      </li>
+
+      <li class="social-item">
+       <a target="_blank" href="https://github.com/bilalmuhammada" class="social-link">
+        <ion-icon name="logo-github"></ion-icon>
+       </a>
+      </li>
+
+      <li class="social-item">
+       <a target="_blank" href="https://wa.me/+393513219813" class="social-link">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </aside>
+
+   <div class="main-content">
+    <nav class="navbar">
+     <ul class="navbar-list">
+      <li class="navbar-item">
+       <button class="navbar-link active" data-nav-link>About</button>
+      </li>
+
+      <li class="navbar-item">
+       <button class="navbar-link" data-nav-link>Resume</button>
+      </li>
+
+      <li class="navbar-item">
+       <button class="navbar-link" data-nav-link>Portfolio</button>
+      </li>
+
+      <li class="navbar-item">
+       <button class="navbar-link" data-nav-link>Contact</button>
+      </li>
+     </ul>
+    </nav>
+
+    <article class="about active" data-page="about">
+     <header>
+      <h2 class="h2 article-title">About Me</h2>
+     </header>
+
+     <section class="about-text">
+      <p>
+       I’m a <strong>Full Stack Software Engineer in Italy</strong> with over 6
+       years of experience delivering high-performance digital solutions for
+       leading media, eCommerce, SaaS, and government platforms. I specialize in
+       <strong
+        >Symfony, Laravel, React.js, Vue.js, Next.js, React Native, and RESTful API
+        development</strong
+       >, building web and mobile applications that are scalable, secure, and
+       user-friendly.
+      </p>
+
+      <p>
+       My portfolio includes <strong>high-traffic platforms across multiple regions</strong>, 
+       as well as multi-country SaaS solutions like <strong>Tiollo</strong>. I have strong expertise 
+       in database architecture (MySQL, MariaDB, PostgreSQL, SQL Server), complex data migrations, 
+       and cloud deployments on Linux servers (Ubuntu, CentOS, AlmaLinux) using Apache and Nginx.
+      </p>
+
+      <p>
+       I’ve successfully integrated advanced APIs such as Google Maps, payment
+        gateways, and SMS services, and developed real-time applications using
+        WebSockets and Pusher. My approach combines technical excellence with an
+        agile mindset, ensuring clean, maintainable code and impactful results
+        for businesses locally and internationally.
+      </p>
+
+     <p>
+      Passionate about innovation and problem-solving, I help brands and organizations 
+      transform ideas into powerful digital experiences. If you’re looking for a 
+      results-driven software engineer to elevate your platform, let’s connect.
+    </p>
+
+     </section>
+
+     <!--
+          - service
+        -->
+
+     <section class="service">
+      <h3 class="h3 service-title">What I'm Doing</h3>
+
+      <ul class="service-list">
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-dev.svg"
+          alt="Web Development icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">Web Development</h4>
+         <p class="service-item-text">
+         Building fast, scalable, and secure websites using Laravel, React.js,
+Vue.js, and Next.js. From corporate websites to high-traffic platforms,
+I deliver tailor-made solutions with excellent performance.
+         </p>
+        </div>
+       </li>
+
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-api.svg"
+          alt="API Development icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">API Development</h4>
+         <p class="service-item-text">
+          Designing and integrating secure REST APIs for mobile and web
+          applications. Experienced in payment gateways, SMS services, Google
+          Maps, and real-time apps with WebSockets & Pusher.
+         </p>
+        </div>
+       </li>
+
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-app.svg"
+          alt="Mobile App Development icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">Mobile Development</h4>
+         <p class="service-item-text">
+         Creating cross-platform mobile apps with React Native. Delivering
+intuitive, responsive, and feature-rich applications for iOS and
+Android to help businesses connect with customers locally and internationally.
+
+         </p>
+        </div>
+       </li>
+
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-hosting.svg"
+          alt="Hosting icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">Hosting & Deployment</h4>
+         <p class="service-item-text">
+          Offering reliable hosting solutions including VPS, cloud-based
+          hosting, and dedicated servers. Expertise in deployment on Linux
+          environments (Ubuntu, CentOS, AlmaLinux) with Apache/Nginx.
+         </p>
+        </div>
+       </li>
+
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-seo.svg"
+          alt="SEO Optimization icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">SEO Optimization</h4>
+         <p class="service-item-text">
+          Boosting online visibility and search rankings with tailored SEO
+strategies. Helping businesses attract more visitors and
+achieve higher conversions.
+
+         </p>
+        </div>
+       </li>
+
+       <li class="service-item">
+        <div class="service-icon-box">
+         <img
+          src="./assets/images/icon-consulting.svg"
+          alt="Consultation icon"
+          width="40"
+         />
+        </div>
+        <div class="service-content-box">
+         <h4 class="h4 service-item-title">IT Consultation</h4>
+         <p class="service-item-text">
+          Providing expert IT consulting services, helping
+organizations make the right technology choices for growth, security,
+and scalability.
+
+         </p>
+        </div>
+       </li>
+      </ul>
+     </section>
+
+     <!--
+          - testimonials
+        -->
+
+     <!--
+          - testimonials modal
+        -->
+
+     <div class="modal-container" data-modal-container>
+      <div class="overlay" data-overlay></div>
+
+      <section class="testimonials-modal">
+       <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+       </button>
+
+       <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+         <img
+          src="./assets/images/avatar-1.png"
+          alt="Daniel lewis"
+          width="80"
+          data-modal-img
+         />
+        </figure>
+
+        <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+       </div>
+
+       <div class="modal-content">
+        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+        <time datetime="2021-06-14">14 June, 2021</time>
+
+        <div data-modal-text>
+         <p>
+          Richard was hired to create a corporate identity. We were very pleased
+          with the work done. She has a lot of experience and is very concerned
+          about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+          cididt consectetur adipiscing elit, seds do et eiusmod tempor
+          incididunt ut laborels dolore magnarels alia.
+         </p>
+        </div>
+       </div>
+      </section>
+     </div>
+
+     <!--
+          - clients
+        -->
+
+     <section class="certifications-section">
+      <h3 class="h3 certifications-title">Certifications</h3>
+      <ul class="certifications-list">
+       <li class="cert-card">
+        <a
+         href="https://drive.google.com/file/d/12YQUkp1YYUh46x2vc_5T9L-5PJ8leAEz/view?usp=drive_link"
+         target="_blank"
+        >
+         CCNA Routing and Switching - Cisco
+        </a>
+       </li>
+       <li class="cert-card">
+        <a
+         href="https://drive.google.com/file/d/1WTm0cJTXCmSf8j2i4Pi4o4keCA4DqEPL/view?usp=drive_link"
+         target="_blank"
+        >
+         GCP Fundamentals: Big Data & Machine Learning – Cloud Onboard
+        </a>
+       </li>
+       <li class="cert-card">
+        <a
+         href="https://drive.google.com/file/d/1XXESYM6JkBI8wqFyz88As6GpulOCu834/view"
+         target="_blank"
+        >
+         MS Word – Microsoft
+        </a>
+       </li>
+       <li class="cert-card">
+        <a
+         href="https://drive.google.com/file/d/17NW9qB-pZTHXNkf0ZF9_zDKrSJcCaTCI/view"
+         target="_blank"
+        >
+         MS Excel – Microsoft
+        </a>
+       </li>
+       <li class="cert-card">
+        <a
+         href="https://drive.google.com/file/d/1Q-SQn6fVjeA2B3_oEhabToSO7X5kw-Ea/view"
+         target="_blank"
+        >
+         MS PowerPoint – Microsoft
+        </a>
+       </li>
+      </ul>
+     </section>
+    </article>
+
+    <!--
+        - #RESUME
+      -->
+
+    <article class="resume" data-page="resume">
+     <header>
+      <h2 class="h2 article-title">Resume</h2>
+     </header>
+
+     <section class="timeline">
+      <div class="title-wrapper">
+       <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+       </div>
+
+       <h3 class="h3">Education</h3>
+      </div>
+      <ol class="timeline-list">
+       <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">
+         University of Messina, Italy
+        </h4>
+
+        <span>2024 — 2026</span>
+
+        <p class="timeline-text">Master of Data Science</p>
+       </li>
+      </ol>
+
+      <ol class="timeline-list">
+       <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">
+         Technical University of Varna, Bulgaria (Erasmus+ Mobility Program)
+        </h4>
+        <span>SEP-2025 — FEB-2026</span>
+        <p class="timeline-text">Master of Data Science</p>
+       </li>
+      </ol>
+
+      <ol class="timeline-list">
+       <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">
+         Institute of Management Sciences (IMSciences), Peshawar
+        </h4>
+
+        <span>2016 — 2020</span>
+
+        <p class="timeline-text">BS Software Engineering (Hons.)</p>
+       </li>
+      </ol>
+     </section>
+
+     <section class="timeline">
+      <div class="title-wrapper">
+       <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+       </div>
+       <h3 class="h3">Experience</h3>
+
+       <!-- Resume Buttons -->
+       <div class="resume-buttons">
+        <a
+         href="./assets/resume/Muhammad Bilal-CV.pdf"
+         target="_blank"
+         class="btn-plain"
+         >View Resume</a
+        >
+        <a
+         href="./assets/resume/Muhammad Bilal-CV.pdf"
+         download
+         class="btn-plain"
+         >Download Resume</a
+        >
+       </div>
+      </div>
+
+      <ol class="timeline-list">
+       <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Full Stack Software Engineer</h4>
+        <span>BUSINESSHUB, Dubai, UAE | DEC 2023  – Present</span>
+        <ul class="timeline-text">
+         <li>
+          Designed and developed high-traffic platforms using Laravel,Symfony React.js,
+          Next.js, Vue.js.
+         </li>
+         <li>
+          Managed scalable MySQL, MariaDB, PostgreSQL, and SQLServer databases
+          for media content and archival systems.
+         </li>
+         <li>
+          Wrote reusable RESTful APIs for mobile apps and third-party
+          integrations.
+         </li>
+         <li>
+          Migrated millions of records ensuring consistency and performance.
+         </li>
+         <li>
+          Led software lifecycle phases: SDLC, Agile methodologies, code
+          reviews, and deployment.
+         </li>
+         <li>
+          Collaborated with UI/UX teams for cross-platform responsive design.
+         </li>
+         <li>Research and implement new technology stacks.</li>
+         <li>
+          Prepared technical documentation supporting team collaboration and
+          operations.
+         </li>
+        </ul>
+       </li>
+
+       <!-- SimplistQ Solutions -->
+       <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Software Engineer</h4>
+        <span>EZYSOFT SOLUTIONS – DIGITAL AGENCY, AUSTRIA | MAY 2022 – DEC 2023</span>
+        <ul class="timeline-text">
+         <li>
+          Developed full-stack web applications in Laravel, React.js, and
+          Vue.js.
+         </li>
+         <li>
+          Deployed CRM and invoicing systems for enterprise clients (Sadad,
+          Twyla, etc.).
+         </li>
+         <li>
+          Performed unit testing and system debugging to ensure stability.
+         </li>
+         <li>
+          Mentored junior developers and coordinated with clients on project
+          deliverables.
+         </li>
+        </ul>
+       </li>
+      </ol>
+     </section>
+
+     <section class="skill">
+      <h3 class="h3 skills-title">My Skills</h3>
+
+      <!-- Visual Progress Bars -->
+      <ul class="skills-list content-card">
+       <li class="skills-item">
+        <div class="title-wrapper">
+         <h5 class="h5">Web Development</h5>
+         <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+         <div class="skill-progress-fill" style="width: 90%"></div>
+        </div>
+       </li>
+
+       <li class="skills-item">
+        <div class="title-wrapper">
+         <h5 class="h5">Frontend Frameworks</h5>
+         <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+         <div class="skill-progress-fill" style="width: 85%"></div>
+        </div>
+       </li>
+
+       <li class="skills-item">
+        <div class="title-wrapper">
+         <h5 class="h5">Backend & APIs</h5>
+         <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+         <div class="skill-progress-fill" style="width: 90%"></div>
+        </div>
+       </li>
+
+       <li class="skills-item">
+        <div class="title-wrapper">
+         <h5 class="h5">Databases</h5>
+         <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+         <div class="skill-progress-fill" style="width: 85%"></div>
+        </div>
+       </li>
+
+       <li class="skills-item">
+        <div class="title-wrapper">
+         <h5 class="h5">Server & Deployment</h5>
+         <data value="80">80%</data>
+        </div>
+        <div class="skill-progress-bg">
+         <div class="skill-progress-fill" style="width: 80%"></div>
+        </div>
+       </li>
+      </ul>
+
+      <!-- Detailed Skills List -->
+      <ul class="skills-detail">
+       <li>
+        <strong>Languages & Frameworks:</strong> Laravel (PHP, MVC),Symfony (PHP, MVC), React.js,
+        React Native, Vue.js, Next.js, JavaScript, JQuery, Ajax HTML, CSS, Tailwind CSS
+       </li>
+       <li>
+        <strong>Databases:</strong> MySQL, MariaDB, PostgreSQL, SQL Server, MongoDB,
+        optimization, query tuning
+       </li>
+       <li>
+        <strong>APIs & Integrations:</strong> RESTful APIs, Google API, Meta
+        (Facebook), X (Twitter), Payment & SMS Gateways, Google Maps, RSS feeds,
+        sitemap XML
+       </li>
+       <li>
+        <strong>Architecture:</strong> MVC, MVP, real-time applications, Pusher,
+        WebSockets
+       </li>
+       <li>
+        <strong>Server & Deployment:</strong> Linux (Ubuntu, CentOS, AlmaLinux),
+        Apache, Nginx, DigitalOcean, Virtual Hosts, SSL, cPanel, shell scripting, cloud
+        hosting
+       </li>
+       <li>
+        <strong>Tools:</strong> Ubuntu Desktop, Docker, Git (GitHub, GitLab,
+        Bitbucket), Postman, JMeter, AB Load Testing, Agile, Scrum, JIRA,
+        Trello, Slack
+       </li>
+       <li><strong>Other:</strong> Microsoft Office Suite, Google Workspace</li>
+      </ul>
+     </section>
+    </article>
+
+    <!--
+        - #PORTFOLIO
+      -->
+
+    <article class="portfolio" data-page="portfolio">
+     <header>
+      <h2 class="h2 article-title">Portfolio</h2>
+     </header>
+
+     <section class="projects">
+      <!-- <ul class="filter-list">
+       <li class="filter-item">
+        <button class="active" data-filter-btn>Projects</button>
+       </li>
+      </ul> -->
+
+      <div class="filter-select-box">
+       <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+
+        <div class="select-icon">
+         <ion-icon name="chevron-down"></ion-icon>
+        </div>
+       </button>
+
+       <ul class="select-list">
+        <li class="select-item">
+         <button data-select-item>All</button>
+        </li>
+
+        <li class="select-item">
+         <button data-select-item>Web design</button>
+        </li>
+
+        <li class="select-item">
+         <button data-select-item>Applications</button>
+        </li>
+
+        <li class="select-item">
+         <button data-select-item>Web development</button>
+        </li>
+       </ul>
+      </div>
+
+      <ul class="project-list">
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="applications"
+       >
+        <a href="https://www.kidsexpo.qa/en">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+           src="./assets/images/kidsexpo.png"
+           alt="task manager"
+           loading="lazy"
+          />
+         </figure>
+
+         <h3 class="project-title">Kids Expo</h3>
+
+         <p class="project-category">
+          Event platform for education, health, and government
+         </p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="https://bonandbean.com" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/bonandbean.png"
+           alt="Bon and Bean"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">Bon and Bean</h3>
+         <p class="project-category">Specialty coffee e-commerce</p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="mobile development"
+       >
+        <a href="https://www.littlesailor.com.qa/" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/littlesailor.png"
+           alt="Little Sailor"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">Little Sailor</h3>
+         <p class="project-category">Restaurant dine-in & takeaway app</p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="https://almaswater.com" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/almaswater.png"
+           alt="Almass Water"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">Almass Water</h3>
+         <p class="project-category">Bottle distribution & delivery portal</p>
+        </a>
+       </li>
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="https://flatwhite.qa/" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/flatwhite.png"
+           alt="Flatehiot Qatar"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">Flatehiot Qatar</h3>
+         <p class="project-category">Web development</p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="https://ciaokey.it/" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/ciaokey.png"
+           alt="Ciaokey"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">Ciaokey</h3>
+         <p class="project-category">E-commerce platform</p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="http://www.influencerpro.org/" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/ip.png"
+           alt="InfluencerPro"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">InfluencerPro</h3>
+         <p class="project-category">Web development</p>
+        </a>
+       </li>
+
+      <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="http://businesshub.at/" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/bh.png"
+           alt="BusinessHub"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">BusinessHub</h3>
+         <p class="project-category">Web development</p>
+        </a>
+       </li>
+
+       <li
+        class="project-item active"
+        data-filter-item
+        data-category="web development"
+       >
+        <a href="https://uetpeshawar.edu.pk" target="_blank">
+         <figure class="project-img">
+          <div class="project-item-icon-box">
+           <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img
+           src="./assets/images/uet-peshawar.png"
+           alt="UET Peshawar"
+           loading="lazy"
+          />
+         </figure>
+         <h3 class="project-title">UET Peshawar</h3>
+         <p class="project-category">Academic system lifecycle participation</p>
+        </a>
+       </li>
+      </ul>
+     </section>
+    </article>
+
+    <!--
+        - #BLOG
+      -->
+
+    <article class="blog" data-page="blog">
+     <header>
+      <h2 class="h2 article-title">Blog</h2>
+     </header>
+
+     <section class="blog-posts">
+      <ul class="blog-posts-list">
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-1.jpg"
+           alt="Design conferences in 2022"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+          <p class="blog-text">
+           Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+          </p>
+         </div>
+        </a>
+       </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-2.jpg"
+           alt="Best fonts every designer"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+          <p class="blog-text">
+           Sed ut perspiciatis, nam libero tempore, cum soluta nobis est
+           eligendi.
+          </p>
+         </div>
+        </a>
+       </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-3.jpg"
+           alt="Design digest #80"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+          <p class="blog-text">
+           Excepteur sint occaecat cupidatat no proident, quis nostrum
+           exercitationem ullam corporis suscipit.
+          </p>
+         </div>
+        </a>
+       </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-4.jpg"
+           alt="UI interactions of the week"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+          <p class="blog-text">
+           Enim ad minim veniam, consectetur adipiscing elit, quis nostrud
+           exercitation ullamco laboris nisi.
+          </p>
+         </div>
+        </a>
+       </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-5.jpg"
+           alt="The forgotten art of spacing"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+          <p class="blog-text">
+           Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore
+           magna aliqua.
+          </p>
+         </div>
+        </a>
+       </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+         <figure class="blog-banner-box">
+          <img
+           src="./assets/images/blog-6.jpg"
+           alt="Design digest #79"
+           loading="lazy"
+          />
+         </figure>
+
+         <div class="blog-content">
+          <div class="blog-meta">
+           <p class="blog-category">Design</p>
+
+           <span class="dot"></span>
+
+           <time datetime="2022-02-23">Fab 23, 2022</time>
+          </div>
+
+          <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+          <p class="blog-text">
+           Optio cumque nihil impedit uo minus quod maxime placeat, velit esse
+           cillum.
+          </p>
+         </div>
+        </a>
+       </li>
+      </ul>
+     </section>
+    </article>
+
+    <!--
+        - #CONTACT
+      -->
+
+    <article class="contact" data-page="contact">
+     <header>
+      <h2 class="h2 article-title">Contact</h2>
+     </header>
+
+     <section class="mapbox" data-mapbox>
+      <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12004.904801739745!2d15.556256367905012!3d38.193820891733556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1315f2b2d35f29c5%3A0x5d15e7d7e6f2d8b7!2sMessina%2C%20Italy!5e0!3m2!1sen!2s!4v1758628059799!5m2!1sen!2s"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </figure>
+     </section>
+
+     <section class="contact-form">
+      <h3 class="h3 form-title">Contact Form</h3>
+
+      <form action="#" class="form" data-form>
+       <div class="input-wrapper">
+        <input
+         type="text"
+         name="fullname"
+         class="form-input"
+         placeholder="Full name"
+         required
+         data-form-input
+        />
+
+        <input
+         type="email"
+         name="email"
+         class="form-input"
+         placeholder="Email address"
+         required
+         data-form-input
+        />
+       </div>
+
+       <textarea
+        name="message"
+        class="form-input"
+        placeholder="Your Message"
+        required
+        data-form-input
+       ></textarea>
+
+       <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+       </button>
+      </form>
+     </section>
+    </article>
+   </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script
+   type="module"
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+   nomodule
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+ </body>
+</html>
